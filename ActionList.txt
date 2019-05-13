@@ -5990,6 +5990,7 @@ Main	_RScd217e59dc8a590480810d4acb0d6eda4810a706	Script: test-infinate-loop.py
 Main	_RS5c44e02e97d0cb18ce4347e2c9e676fb4ed9b8eb	Script: toggle_script.py
 Main	_RSdfba25808a60ab3ab6344f853070ae258cc289a1	Script: importCv2.py
 Main	_RSe7d960cfc61be16eb7729e982e19b34cb037791e	Script: test-toggle-mute.py
+Main	_RS46b7d28e42e51a613a0cecb13790231d084ae2ed	Script: execute_song_state.py
 Main	65535	No-op (no action)
 Media Explorer	1004	Browser: Go to parent folder
 Media Explorer	1008	Preview: Play

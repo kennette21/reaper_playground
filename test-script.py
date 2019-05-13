@@ -66,10 +66,10 @@ def toggle_mute(track):
 
 def see_song():
     del CONT_PLAYING[:]
-    ret, cur_img = cap.read()
-    # cur_img = requests.get("http://192.168.0.12:8080/shot.jpg")
-    # pl_img = Image.open(StringIO(cur_img.content))
-    detect_loop(cur_img)
+    # ret, pl_img = cap.read()
+    cur_img = requests.get("http://192.168.0.12:8080/shot.jpg")
+    pl_img = Image.open(StringIO(cur_img.content))
+    detect_loop(pl_img)
     toggle_state = str(RPR_GetProjExtState(0, "DummyToggleAction", "toggle_state", "", 123123)[4])
     if toggle_state == "1":
       RPR_defer("see_song()")
@@ -93,5 +93,5 @@ def main():
     msg("wholly shit we started!!")
     see_song()
 
-cap = cv2.VideoCapture(1)
+# cap = cv2.VideoCapture(1)
 main()

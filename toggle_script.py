@@ -8,9 +8,9 @@ msg(str(state) + "\n")
 
 def toggleFunc():
     # test infinate loop
-    cmd = RPR_NamedCommandLookup("_RScd217e59dc8a590480810d4acb0d6eda4810a706")
+    #cmd = RPR_NamedCommandLookup("_RScd217e59dc8a5s90480810d4acb0d6eda4810a706")
     # test script
-    # cmd = RPR_NamedCommandLookup("_RS16ed897990f130f368a1db0c17c067801b1517a5")
+    cmd = RPR_NamedCommandLookup("_RS16ed897990f130f368a1db0c17c067801b1517a5")
     RPR_Main_OnCommand(cmd, 0)
 
 if state == "0":
